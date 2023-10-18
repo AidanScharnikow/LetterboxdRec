@@ -1,45 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.search-container {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Neutral background color */
 }
 
-#search-input {
-    flex-grow: 1;
-    padding: 10px;
+.container {
+    text-align: center;
+    margin-top: -50px; /* Move the container slightly up */
+}
+
+h1 {
+    font-size: 24px;
+    color: #333; /* Neutral text color */
+    margin-bottom: 20px; /* Add some spacing below the title */
+}
+
+.search-box {
+    background-color: #ffffff; /* Neutral box color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 0; /* Remove margin */
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 16px;
+    text-align: center; /* Center text within the input */
 }
 
-#search-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+button {
+    background-color: #333; /* Neutral button color */
+    color: #fff; /* Button text color */
+    padding: 15px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
-    font-size: 16px;
+    margin-top: 10px; /* Add some spacing above the button */
 }
 
-#search-results {
-    margin-top: 20px;
+button:hover {
+    background-color: #555; /* Button color on hover */
 }
